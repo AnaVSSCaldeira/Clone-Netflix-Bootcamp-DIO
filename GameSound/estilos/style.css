@@ -1,0 +1,115 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background: var(--preto);
+    color: var(--branco);
+}
+
+/*base*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+img{
+    width: 15%;
+}
+img:hover{
+    cursor: pointer;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav a:hover{
+    color: var(--branco);
+}
+
+/*jogo principal*/
+.jogoprincipal{
+    font-size: 20px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/ff4.png');
+    
+    background-size: cover;
+    height: 70vh;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogoprincipal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.jogoprincipal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    border-radius: 3px;
+    color: var(--branco);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: .3s ease-out;
+}
+.botao:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 2%;
+}
+.jogoprincipal .container{
+    width: 60%;
+}
+
+/*mini jogos*/
+.boxjogo{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.gamecarousel{
+    margin: 1% 1% 0 0;
+}
+.titulomini{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 1%;
+}
